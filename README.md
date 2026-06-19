@@ -38,7 +38,7 @@ Softwareentwicklung SoSe2026
 
 <!-- Akzeptanzkriterien hier ergänzen -->
 
-## Aufgabematerial
+## Aufgabenmaterial
 
 - [Arbeitsaufträge](task.md)
 

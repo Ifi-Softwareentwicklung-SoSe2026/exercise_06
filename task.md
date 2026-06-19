@@ -2,7 +2,7 @@
 
 <!-- Aufgabenstellung hier ergänzen -->
 
-# Aufgabematerial
+# Aufgabenmaterial
 
 <!-- Material hier ergänzen -->
 
