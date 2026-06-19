@@ -28,20 +28,18 @@ Softwareentwicklung SoSe2026
 
 ## Aufgabe
 
-In der User Story ist die 
-
 ## **User Story: Digitale Flächenverwaltungsplattform für Bauvorhaben**
 
-Als Bauamtsmitarbeiter möchte ich eine digitale Plattform zur Verwaltung von Bauflächen und -vorhaben nutzen, damit ich Bauanträge effizient bearbeiten, Flächen zuweisen und den Fortschritt von Bauprojekten nachverfolgen kann.
+Als Bauamtsmitarbeiter möchte ich eine digitale Plattform zur Verwaltung von Bauflächen und Bauvorhaben nutzen, damit ich Bauanträge effizient bearbeiten, Flächen zuweisen und den Fortschritt von Bauprojekten nachverfolgen kann.
 
 ### **Akzeptanzkriterien**
 
 1. **Grundlegende Flächenverwaltung**
 ====================
 
-- Das System muss Grundstücke und Bauflächen veralten können (Flurstücknummer („0015 00012 001/002“ (Flur 0015, Flurstück 00012, Teilfläche 001/002)) Größe, Lage, aktuelle Nutzung (Gewerbe, Landwirtschaft, Forst, Wohnnutzung, Brachfläche, ...), Bebaubarkeit (ja, nein, auflagen). Ein Grundstück kann mehrere Bauflächen enthalten.
+- Das System muss Grundstücke und Bauflächen verwalten können (Flurstücknummer („0015 00012 001/002“ (Flur 0015, Flurstück 00012, Teilfläche 001/002)), Größe, Lage, aktuelle Nutzung (Gewerbe, Landwirtschaft, Forst, Wohnnutzung, Brachfläche, ...), Bebaubarkeit (ja, nein, auflagen). Ein Grundstück kann mehrere Bauflächen enthalten.
 - Jede Fläche muss mit Metadaten wie B-Plan-Nummer ("BP-2022-089 – Wohngebiet Leipzig-Nord"), Bodenrichtwert ($500 €/m^2$) und Eigentümer verknüpft sein.
-- Flächen müssen als „frei“, „reserviert“ oder „bebaut“ markiert werden können.
+- Flächen müssen als `frei`, `reserviert` oder `bebaut` markiert werden können.
 
 2. **Bauvorhaben verwalten**
 ====================
@@ -53,26 +51,69 @@ Als Bauamtsmitarbeiter möchte ich eine digitale Plattform zur Verwaltung von Ba
   - Status (Antrag eingereicht, genehmigt, abgelehnt, in Bearbeitung, abgeschlossen)
 - Jedes Bauvorhaben muss einer oder mehreren Flächen zugeordnet werden können.
 
+## Initialer Arbeitsablauf
 
-## Agent-Workflow
+Maria erstellt automatisch ein Assignment-Issue, sobald Ihr Repository durch GitHub Classroom angelegt wurde.
 
-Erstellen Sie zu Beginn ein GitHub-Issue, in dem Sie Kevin bitten, aus dieser User Story ein PlantUML-Klassendiagramm zu erstellen.
+Bearbeiten Sie zuerst dieses Maria-Issue:
 
-Kevin arbeitet auf einem eigenen Branch, ändert im  und erstellt eine Pull Request nach `main`. Kevin soll dabei auch den LiaScript-Course-Link auf Ihr studentisches Repository anpassen.
+1. Erstellen Sie einen eigenen Branch.
+2. Ändern Sie den LiaScript-Course-Link oben in dieser `README.md`, sodass er auf Ihr studentisches Repository zeigt.
+3. Legen Sie ein leeres C#-Konsolenprojekt an:
 
-Reviewen Sie Kevins Pull Request. Lisa reviewed denselben Pull Request automatisch.
-Kevin arbeitet Feedback erst ein, wenn für denselben PR-Stand sowohl Ihr Review als auch Lisas Review vorliegen. Der Pull Request wird erst gemerged, wenn beide Reviews genehmigt sind.
+   ```bash
+   dotnet new console -n Baufflaechenverwaltung
+   ```
 
-## Aufgabe: PlantUML-Dokumentaton
+4. Erstellen Sie eine Pull Request nach `main` und verknüpfen Sie diese mit dem Maria-Issue über `Closes #<Issue-Number>`.
+5. Warten Sie auf die automatische Review von Lisa und arbeiten Sie Feedback auf demselben Branch ein.
+6. Nach dem Merge erstellen Sie ein eigenes Issue für Kevin.
 
-- [plantUML Editor](https://plantuml.com)
+## Kevin aktivieren
 
-- paste and copy your code! Mit Reloads verlieren Sie Ihre Eingaben, daher vorher sichern!
+Kevin wird in dieser Übung über ein Label aktiviert.
 
-```text @plantuml
+Erstellen Sie nach der vorbereitenden PR ein neues GitHub-Issue:
+
+- Das Issue muss von Ihnen als Studierende formuliert werden.
+- Das Issue muss das Label `kevin` erhalten.
+- Das Issue soll Kevin konkret beauftragen, die User Story und Akzeptanzkriterien aus dieser `README.md` in C# umzusetzen.
+- Kevin erstellt anschließend eine Pull Request nach `main`.
+
+Kevin bearbeitet keine Issues von Maria oder Jürgen direkt. Sie müssen diese Anforderungen erst in ein eigenes, konkret formuliertes Kevin-Issue übersetzen.
+
+## Lisa Review
+
+Lisa reviewed Pull Requests automatisch.
+
+- Für C#-Pull-Requests wartet Lisa auf den GitHub Actions Workflow `dotnet-build`.
+- Die CI-Logs und die Konsolenausgabe werden in Lisas Review-Kontext einbezogen.
+- Wenn Lisa Änderungen anfordert, arbeiten Sie oder Kevin das Feedback auf demselben Branch ein.
+- Ein Merge nach `main` erfolgt erst nach positiver Review.
+
+## Jürgen Issues und Triage
+
+Nach Kevins erster Umsetzung erstellt Jürgen weitere Issues. Diese sind bewusst teilweise unscharf formuliert.
+
+Ihre Aufgabe ist dann:
+
+- Anforderungen aus Jürgens Issues verstehen und trennen.
+- Issues mit passenden Labels kategorisieren.
+- Priorität, Aufwand und Abhängigkeiten einschätzen.
+- Bei Bedarf ein neues, konkretes Kevin-Issue erstellen und mit `kevin` labeln.
+- Nicht alles muss sofort umgesetzt werden; begründen Sie, was zurückgestellt oder nicht bearbeitet wird.
+
+## UML-Dokumentation
+
+Falls im Verlauf der Jürgen-Issues ein UML-Klassendiagramm gefordert wird, ergänzen Sie es in diesem Abschnitt.
+
+```text @plantUML
 @startuml
 
 @enduml
 ```
+@plantUML.eval(png)
 
+## Aufgabenmaterial
 
+- [Agent-Workflow und interne Aufgabenstruktur](task.md)
