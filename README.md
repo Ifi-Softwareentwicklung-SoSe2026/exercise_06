@@ -28,33 +28,51 @@ Softwareentwicklung SoSe2026
 
 ## Aufgabe
 
-<!-- Aufgabenstellung hier ergänzen -->
+In der User Story ist die 
 
-## User Story
+## **User Story: Digitale Flächenverwaltungsplattform für Bauvorhaben**
 
-<!-- User Story hier ergänzen -->
+Als Bauamtsmitarbeiter möchte ich eine digitale Plattform zur Verwaltung von Bauflächen und -vorhaben nutzen, damit ich Bauanträge effizient bearbeiten, Flächen zuweisen und den Fortschritt von Bauprojekten nachverfolgen kann.
 
-### Akzeptanzkriterien
+### **Akzeptanzkriterien**
 
-<!-- Akzeptanzkriterien hier ergänzen -->
+1. **Grundlegende Flächenverwaltung**
+====================
 
-## Aufgabenmaterial
+- Das System muss Grundstücke und Bauflächen veralten können (Flurstücknummer („0015 00012 001/002“ (Flur 0015, Flurstück 00012, Teilfläche 001/002)) Größe, Lage, aktuelle Nutzung (Gewerbe, Landwirtschaft, Forst, Wohnnutzung, Brachfläche, ...), Bebaubarkeit (ja, nein, auflagen). Ein Grundstück kann mehrere Bauflächen enthalten.
+- Jede Fläche muss mit Metadaten wie B-Plan-Nummer ("BP-2022-089 – Wohngebiet Leipzig-Nord"), Bodenrichtwert ($500 €/m^2$) und Eigentümer verknüpft sein.
+- Flächen müssen als „frei“, „reserviert“ oder „bebaut“ markiert werden können.
 
-- [Arbeitsaufträge](task.md)
+2. **Bauvorhaben verwalten**
+====================
+
+- Das System muss Bauvorhaben anlegen und verknüpfen können mit:
+  - Antragsteller (Name, Kontaktdaten, Firma)
+  - Geplante Nutzung (Wohngebäude, Gewerbe, Infrastruktur)
+  - Zeitplan (Beginn, Fertigstellung)
+  - Status (Antrag eingereicht, genehmigt, abgelehnt, in Bearbeitung, abgeschlossen)
+- Jedes Bauvorhaben muss einer oder mehreren Flächen zugeordnet werden können.
+
 
 ## Agent-Workflow
 
 Erstellen Sie zu Beginn ein GitHub-Issue, in dem Sie Kevin bitten, aus dieser User Story ein PlantUML-Klassendiagramm zu erstellen.
 
-Kevin arbeitet auf einem eigenen Branch, aktualisiert die `README.md` und erstellt eine Pull Request nach `main`. Kevin soll dabei auch den LiaScript-Course-Link auf Ihr studentisches Repository anpassen.
+Kevin arbeitet auf einem eigenen Branch, ändert im  und erstellt eine Pull Request nach `main`. Kevin soll dabei auch den LiaScript-Course-Link auf Ihr studentisches Repository anpassen.
 
-Reviewen Sie Kevins Pull Request. Lisa reviewed denselben Pull Request automatisch. Kevin arbeitet Feedback erst ein, wenn für denselben PR-Stand sowohl Ihr Review als auch Lisas Review vorliegen. Der Pull Request wird erst gemerged, wenn beide Reviews genehmigt sind.
+Reviewen Sie Kevins Pull Request. Lisa reviewed denselben Pull Request automatisch.
+Kevin arbeitet Feedback erst ein, wenn für denselben PR-Stand sowohl Ihr Review als auch Lisas Review vorliegen. Der Pull Request wird erst gemerged, wenn beide Reviews genehmigt sind.
 
-## Aufgabe: PlantUML-Antwortfeld
-
-Kevin ersetzt den folgenden Platzhalter mit einem LiaScript-kompatiblen PlantUML-Block. Der erzeugte Block enthält `@plantUML.eval(png)`, damit LiaScript das Diagramm rendert.
+## Aufgabe: PlantUML-Dokumentaton
 
 - [plantUML Editor](https://plantuml.com)
+
 - paste and copy your code! Mit Reloads verlieren Sie Ihre Eingaben, daher vorher sichern!
 
-<!-- kevin:uml-diagram -->
+```text @plantuml
+@startuml
+
+@enduml
+```
+
+
