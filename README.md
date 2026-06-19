@@ -54,7 +54,7 @@ Reviewen Sie Kevins Pull Request. Lisa reviewed denselben Pull Request automatis
 
 Kevin ersetzt den folgenden Platzhalter mit einem LiaScript-kompatiblen PlantUML-Block. Der erzeugte Block enthält `@plantUML.eval(png)`, damit LiaScript das Diagramm rendert.
 
-- [plantUml Editor](https://pantuml.com)
+- [plantUML Editor](https://plantuml.com)
 - paste and copy your code! Mit Reloads verlieren Sie Ihre Eingaben, daher vorher sichern!
 
 <!-- kevin:uml-diagram -->
