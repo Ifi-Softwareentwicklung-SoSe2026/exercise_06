@@ -165,9 +165,12 @@ Nach Kevins erster Umsetzung erstellt Jürgen weitere Issues. Diese sind bewusst
 Ihre Aufgabe ist dann:
 
 - Anforderungen aus Jürgens Issues verstehen und trennen.
+- Aus dem ersten unscharfen Jürgen-Issue zwei eigene, konkrete Issues erstellen.
+- In beiden eigenen Issues das ursprüngliche Jürgen-Issue mit `#<Issue-Number>` referenzieren.
 - Issues mit passenden Labels kategorisieren.
 - Priorität, Aufwand und Abhängigkeiten einschätzen.
-- Bei Bedarf ein neues, konkretes Kevin-Issue erstellen und mit `kevin` labeln.
+- Höchstens eines der beiden Issues mit `kevin` labeln; mindestens eines bearbeiten Sie selbst per Branch und Pull Request.
+- Bei späteren Jürgen-Issues nur dann ein konkretes Kevin-Issue erstellen und mit `kevin` labeln, wenn Sie die Aufgabe bewusst an Kevin delegieren wollen.
 - Nicht alles muss sofort umgesetzt werden; begründen Sie, was zurückgestellt oder nicht bearbeitet wird.
 
 ## UML-Dokumentation
