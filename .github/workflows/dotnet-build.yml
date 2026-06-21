@@ -3,10 +3,6 @@ name: dotnet-build
 on:
   pull_request:
     branches: [main]
-    paths:
-      - "**/*.cs"
-      - "**/*.csproj"
-      - "**/*.sln"
   workflow_dispatch:
 
 concurrency:
