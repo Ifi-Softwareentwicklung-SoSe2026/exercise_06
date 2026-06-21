@@ -23,12 +23,13 @@ Nach dem Merge dieser Vorbereitungs-PR erstellen die Studierenden ein eigenes Gi
 
 - Das Issue muss von den Studierenden selbst formuliert werden.
 - Das Issue muss das Label `kevin` erhalten.
-- Das Issue soll Kevin konkret beauftragen, die User Story aus `README.md` umzusetzen.
+- Das Issue soll Kevin konkret beauftragen, entweder eine C#-Funktionalitaet aus der User Story umzusetzen oder eine UML-/PlantUML-Dokumentationsaufgabe in `README.md` zu bearbeiten.
+- UML-Aufgaben muessen im Issue eindeutig Begriffe wie `UML`, `PlantUML`, `Klassendiagramm`, `README.md`, `Klassenstruktur` oder `UML-Dokumentation` verwenden.
 - Kevin wird durch das Label `kevin` aktiviert und erstellt daraus eine Pull Request.
 
 ## 2. Validierung von Kevins Pull Request durch Lisa
 
-Lisa reviewed Kevins Pull Request automatisch. Der Server wartet dabei auf den `dotnet-build`-Workflow und uebergibt dessen Logs an Lisa.
+Lisa reviewed Kevins Pull Request automatisch. Der Server wartet bei Exercise06 auf den `dotnet-build`-Workflow; dieser laeuft auch fuer relevante README- und task.md-Aenderungen.
 
 Lisa soll insbesondere pruefen:
 
@@ -37,6 +38,7 @@ Lisa soll insbesondere pruefen:
 - Die Konsolenausgabe demonstriert die Funktionalitaet nachvollziehbar.
 - Die Klassenstruktur ist erweiterbar und passt zur Flaechenverwaltung.
 - Kevin hat keine unangeforderten grossen Architekturwechsel oder fachfremden Features eingebaut.
+- Bei UML-Aufgaben hat Kevin den PlantUML-Block im Abschnitt `UML-Dokumentation` der `README.md` sinnvoll ersetzt oder erweitert, ohne unangeforderte C#-Aenderungen vorzunehmen.
 
 Erwartete fachliche Mindeststruktur:
 

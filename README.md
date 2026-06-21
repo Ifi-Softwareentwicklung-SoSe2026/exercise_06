@@ -149,11 +149,19 @@ Erstellen Sie nach der vorbereitenden PR ein neues GitHub-Issue:
 
 Kevin bearbeitet keine Issues von Maria oder Jürgen direkt. Sie müssen diese Anforderungen erst in ein eigenes, konkret formuliertes Kevin-Issue übersetzen.
 
+Kevin kann in dieser Übung zwei Arten von Issues bearbeiten:
+
+- **C#-Umsetzung:** Beschreiben Sie konkret, welche Funktionalität im C#-Projekt geändert oder ergänzt werden soll.
+- **UML-Dokumentation:** Beschreiben Sie konkret, dass Kevin das UML-Klassendiagramm im Abschnitt „UML-Dokumentation“ dieser `README.md` ergänzen oder verbessern soll.
+
+Formulieren Sie UML-Aufgaben eindeutig mit Begriffen wie `UML`, `PlantUML`, `Klassendiagramm`, `README.md` oder `Klassenstruktur`, damit Kevin die Aufgabe als Dokumentationsauftrag erkennt.
+
 ## Lisa Review
 
 Lisa reviewed Pull Requests automatisch.
 
 - Für C#-Pull-Requests wartet Lisa auf den GitHub Actions Workflow `dotnet-build`.
+- Für UML-/README-Pull-Requests prüft Lisa, ob der PlantUML-Block im Abschnitt „UML-Dokumentation“ fachlich sinnvoll und LiaScript-kompatibel ist.
 - Die CI-Logs und die Konsolenausgabe werden in Lisas Review-Kontext einbezogen.
 - Wenn Lisa Änderungen anfordert, arbeiten Sie oder Kevin das Feedback auf demselben Branch ein.
 - Ein Merge nach `main` erfolgt erst nach positiver Review.
@@ -170,6 +178,7 @@ Ihre Aufgabe ist dann:
 - Issues mit passenden Labels kategorisieren.
 - Priorität, Aufwand und Abhängigkeiten einschätzen.
 - Höchstens eines der beiden Issues mit `kevin` labeln; mindestens eines bearbeiten Sie selbst per Branch und Pull Request.
+- Wenn Sie Kevin mit der UML-Dokumentation beauftragen, muss das Issue ausdrücklich den Abschnitt „UML-Dokumentation“ oder das UML-Klassendiagramm in `README.md` nennen.
 - Bei späteren Jürgen-Issues nur dann ein konkretes Kevin-Issue erstellen und mit `kevin` labeln, wenn Sie die Aufgabe bewusst an Kevin delegieren wollen.
 - Nicht alles muss sofort umgesetzt werden; begründen Sie, was zurückgestellt oder nicht bearbeitet wird.
 
