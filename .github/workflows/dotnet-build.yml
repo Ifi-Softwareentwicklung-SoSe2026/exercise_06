@@ -3,6 +3,13 @@ name: dotnet-build
 on:
   pull_request:
     branches: [main]
+    paths:
+      - "**/*.cs"
+      - "**/*.csproj"
+      - "**/*.sln"
+      - "README.md"
+      - "task.md"
+      - ".github/workflows/dotnet-build.yml"
   workflow_dispatch:
 
 concurrency:
